@@ -1,0 +1,1 @@
+curl -H "Content-Type: application/json" -X POST -d '{"login":"limingth","password":"8886bb111333773d0de60756c753059d760b83b4b2656b5179852cd1259916d265d72c326bde1414004cbc305f82f5e74d118761aed0e778a93db0b99e96b951"}' http://localhost:3000/user/authenticate
