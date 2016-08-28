@@ -1,9 +1,9 @@
 {
-  "name": "modulus",
+  "name": "maodou-cli",
   "description": "The command line interface for deploying applications to the Modulus hosting platform.",
   "keywords": [
     "cli",
-    "modulus",
+    "maodou",
     "hosting",
     "cloud hosting",
     "paas",
@@ -57,9 +57,9 @@
     "lab": "~6.2.0",
     "mocha": "1.5.x"
   },
-  "main": "./lib/modulus",
+  "main": "./lib/maodou-cli",
   "bin": {
-    "modulus": "./bin/modulus"
+    "maodou-cli": "./bin/maodou-cli"
   },
   "preferGlobal": true,
   "engines": {
