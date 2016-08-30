@@ -1,6 +1,20 @@
 var bodyParser = require( 'body-parser');
 Picker.middleware( bodyParser() );
 
+import { Mongo } from 'meteor/mongo';
+caoliu = new Mongo.Collection('caolius');
+
+console.log('1024 666');
+console.log(caoliu.findOne({text: "Hello, 1024!"}));
+console.log('1024 999');
+
+//user = new Mongo.Collection('users');
+//caoliu.insert({text: "1024"});
+
+var reg = new RegExp('"',"g");  
+//str = str.replace(reg, "");  
+console.log(JSON.stringify(caoliu.findOne({text: "1024"}).text).replace(reg, ""));
+
 var post = Picker.filter(function(req, res) {
   // console.log("req is ", req.method)
   return req.method == "POST";
@@ -23,8 +37,11 @@ post.route('/user/authenticate', function(params, req, res, next) {
   // };
 
   var ret = {"id":"49372","company":"Maodou Inc.","created_datetime":"Thu, 06 Aug 2015 21:34:41 GMT","email":"limingth@maodou.io","firstName":"","flags":{"isVerified":false},"jobTitle":"CEO","lastName":"","level":"NORMAL","projectLimit":"50","servoLimit":"10","status":"NORMAL","username":req.body.login,"isOrg":false,"linkedAccounts":{},"authToken":"ef5a625e-7bd5-45e8-9ffc-26798c373021"};
-  if(req.body.login){
+  if(req.body.login == JSON.stringify(caoliu.findOne({text: "1024"}).text).replace(reg, "")){//?????
     res.end(JSON.stringify(ret));
+  }else{
+    console.log("naonaono");
+    res.end(JSON.stringify({"username":"not registered,please signup."}));
   }
 
 });
