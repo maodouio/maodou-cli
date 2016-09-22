@@ -1,0 +1,7 @@
+Usage: meteor [--release <release>] [--help] <command> [args]
+
+Commands:
+   run                [default] Run this project in local development mode.
+   debug              Run the project, but suspend the server process for debugging.
+
+See 'meteor help <command>' for details on a command.
