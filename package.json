@@ -1,13 +1,14 @@
 {
-  "name": "maodou-lite",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "maodou",
+  "version": "1.0.6",
+  "description": "Maodou CLI Tool",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "maodou": "./bin/maodou"
+  },
+  "author": "seanjsong <songjinshan@gmail.com>",
   "dependencies": {
     "btoa": "^1.1.2",
     "cli-spinner": "^0.2.5",
@@ -19,5 +20,10 @@
     "request": "^2.74.0",
     "request-promise": "^4.1.1",
     "simple-git": "^1.48.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:maodouio/maodou-cli.git"
+  },
+  "license": "MIT"
 }
