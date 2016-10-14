@@ -1,6 +1,6 @@
 {
   "name": "maodou",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Maodou CLI Tool",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,9 +17,10 @@
     "netrc": "^0.1.4",
     "querystring": "^0.2.0",
     "remove": "^0.1.5",
-    "request": "^2.74.0",
+    "request": "^2.75.0",
     "request-promise": "^4.1.1",
-    "simple-git": "^1.48.0"
+    "simple-git": "^1.48.0",
+    "sleep-promise": "^2.0.0"
   },
   "repository": {
     "type": "git",
