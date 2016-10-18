@@ -1,6 +1,6 @@
 {
   "name": "maodou",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Maodou CLI Tool",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
